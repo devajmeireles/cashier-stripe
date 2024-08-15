@@ -16,6 +16,13 @@ use Stripe\Exception\InvalidRequestException as StripeInvalidRequestException;
 trait ManagesCustomer
 {
     /**
+     * The Stripe customer ID for the model.
+     *
+     * @var string|null
+     */
+    public $stripe_id;
+
+    /**
      * Retrieve the Stripe customer ID.
      *
      * @return string|null
